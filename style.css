@@ -14,7 +14,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 300px;
+    min-width: 350px;
     max-width: 100%;
 }
 
@@ -102,5 +102,23 @@ input[type="text"]:focus {
 }
 
 .tasks-list .remove-btn:active {
+    transform: scale(0.98);
+}
+
+.tasks-list .edit-btn {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    margin-left: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.tasks-list .edit-btn:hover {
+    background-color: #45a049;
+}
+
+.tasks-list .edit-btn:active {
     transform: scale(0.98);
 }
